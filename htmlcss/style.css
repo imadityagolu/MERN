@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p {
+    color: red;
+}
+.self {
+    color: green;
+}
+.veg li{
+    color: blue;
+}
+#fruit {
+    color: yellow;
+}
+     
