@@ -10,7 +10,10 @@ import Test from './Component/Test'
 import StateChange from './Component/StatesChange'
 import LeaderBoard from './Component/leaderBoard'
 import BillSpliter from './Component/BillSpliter'
-import RandomUser from './Component/randomUser/randomUserMain'
+import ApiRandom from './Component/ApiRandom';
+import ApiCall from './Component/ApiCall'
+import FakeStore from "./Component/FakeStore"
+import WeatherForcast from "./Component/WeatherForcast"
 
 function App() {
   return (
@@ -28,8 +31,12 @@ function App() {
   <LeaderBoard/>
   <BillSpliter/>
   <Box/>
+  <ApiCall/>
+  <ApiRandom/>
+  <FakeStore />
+  <WeatherForcast/>
   */}
-  <RandomUser />
+  <BillSpliter/>
 
   </>
 );

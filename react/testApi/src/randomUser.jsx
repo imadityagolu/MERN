@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function randomUserMain(){
+function randomUser(){
 
     const [image, setImage] = useState(null);
     const [name, setName] = useState(null);
@@ -11,6 +11,8 @@ function randomUserMain(){
 
         const result = await response.json();
 
+        console.log(result.results);
+        
         setImage(result.results[0].picture.large);
 
         setName(result.results[0].name.first + " " + result.results[0].name.last);
@@ -32,4 +34,4 @@ function randomUserMain(){
     );
 }
 
-export default randomUserMain;
+export default randomUser;

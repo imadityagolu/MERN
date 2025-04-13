@@ -28,9 +28,17 @@ function LeaderBoard(){
     }
 
     function modifyScore(id, sign){
-        setData(
+        
+        {/*setData(
             data.map((obj) => obj.id === id ? {...obj, score: sign === "+" ? Number(obj.score) + 5 : Number(obj.score) - 5} : obj)
         );
+        */}
+
+        setData((preData) => {
+            const update = preData.map(obj => obj.id === id ? {...obj, score: sign === "+" ? Number(obj.score) + 5 : Number(obj.score) - 5} : obj);
+            return update.sort((a,b) => b.score - a.score);
+        });
+
     }
 
     function handleDelete(id){
