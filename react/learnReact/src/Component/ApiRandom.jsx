@@ -39,6 +39,7 @@ function ApiRandom(){
 
     return (
     <>
+    <h1>generating...</h1>
     <img src={image} alt={name} />
     <h3>{name}</h3>
     </>

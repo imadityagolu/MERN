@@ -14,12 +14,15 @@ import ApiRandom from './Component/ApiRandom';
 import ApiCall from './Component/ApiCall'
 import FakeStore from "./Component/FakeStore"
 import WeatherForcast from "./Component/WeatherForcast"
+import UsingRef from "./Component/UsingRef/UsingRef"
+import Ahref from "./Component/Ahref/Main"
+import FakeStoreFull from "./Component/FakeStore/Main"
 
 function App() {
   return (
   <>
-  <Header/>
   {/*
+  <Header/>
   <Props name="Aditya" age="27"/>
   <ListMap/>
   <Count/>
@@ -31,12 +34,14 @@ function App() {
   <LeaderBoard/>
   <BillSpliter/>
   <Box/>
+  <BillSpliter/>
   <ApiCall/>
-  <ApiRandom/>
   <FakeStore />
   <WeatherForcast/>
+  <UsingRef/>
+  <Ahref/>
   */}
-  <BillSpliter/>
+  <FakeStoreFull/>
 
   </>
 );
